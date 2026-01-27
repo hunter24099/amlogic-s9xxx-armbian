@@ -330,7 +330,7 @@ jobs:
         run: |
           armbian_buildpath="build/output/images"
           [[ -d "${armbian_buildpath}" ]] || mkdir -p "${armbian_buildpath}"
-mkdir -p /home/runner/work/_actions/ophub/amlogic-s9xxx-armbian/main/build
+          mkdir -p /home/runner/work/_actions/ophub/amlogic-s9xxx-armbian/main/build
           ln -sf /builder/build ${{ github.workspace }}/build
           ln -sf /builder/build /home/runner/work/_actions/ophub/amlogic-s9xxx-armbian/main/build
 
